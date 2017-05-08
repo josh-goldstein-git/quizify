@@ -65,7 +65,7 @@ quiz.check <- function(ans)
     cat("\n")
 
     if (ans == this.correct.answer) {
-        .tot <<- .tot + 1
+        tot <<- tot + 1
         cat(message.if.correct)
         cat("\n")
         cat("Explanation: ", this.explanation)
@@ -76,7 +76,7 @@ quiz.check <- function(ans)
         ## cat("\n")
         ## cat("Hint:", this.hint)
         ## cat("\n")
-        warning(message.if.incorrect)
-        warning("Hint: ", this.hint)
+        warning(message.if.incorrect, "\n")
+        warning("Hint: ", this.hint, "\n")
     }
 }

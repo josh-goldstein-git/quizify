@@ -15,7 +15,7 @@ transform.quiz.chunks <- function(chunk.out.list)
   for (i in 1:length(chunk.out.list))
   {
     chunk.vec <- out.list[[i]]
-    qnumber <- names(out.list)[1]
+    qnumber <- names(out.list)[i]
 
     this.answer.name = paste0("answer", qnumber)
     ## get this.instructions

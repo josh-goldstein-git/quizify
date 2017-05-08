@@ -5,7 +5,7 @@ output: html_notebook
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
-In this notebook, which is included in the "quizify" package we have some examples of quiz questions that can be "compiled" using 'quizify()'.
+In this notebook, which is included in the "quizify" package, we have some examples of quiz questions that can be "compiled" using 'quizify()'.
 
 The format for the questions is free-form. But the answers must be written between the double-braces in the format shown below.
 
@@ -13,6 +13,7 @@ Typing 'help(quizify)' in the R-console will provide more information.
 
 
 ```{r}
+# leave this chunk as-is
 tot = 0
 ```
 
@@ -39,9 +40,9 @@ D. I don't know
 {{
 qnumber = 1.2
 instructions = "Replace the NA with your answer (e.g., 'A' in quotes)"
-correct = "B"
+correct.answer = "B"
 hint = "Try 'Re(exp(pi * 1i))' from R console"
-explanation = "exp(pi * i) = cos(pi) + i * sin(pi)."
+explanation = "exp(pi * i) equals cos(pi) + i * sin(pi)."
 }}
 
 

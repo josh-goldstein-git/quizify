@@ -6,6 +6,8 @@ create.final <- function(parsed, final.filename, initial.filename,
   x.out.no.na <- insert.transformed.quiz.chunks(initial.filename,
                                                 transformed.chunk.list
                                                 = parsed.transformed)
+  print("x.out.no.na")
+  print(x.out.no.na)
   ## insert the encoded stuff into x.out.no.na
   x.final = x.out.no.na
   s <- grep("tot = 0", x.out.no.na)[1]

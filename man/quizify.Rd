@@ -28,5 +28,6 @@ quizify(initial.filename,
 # can cat to screen
 x = scan("arithmetic_quiz_final.Rmd", character(), sep = "\\n")
 cat(x, sep = "\\n")
-file.remove("arithmetic_quiz_final.Rmd")
+## to clean up directory
+## file.remove("arithmetic_quiz_final.Rmd")
 }
