@@ -142,7 +142,7 @@ $(document).ready(function () {
 </style>
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("arithmetic_quiz_initial.Rmd");
+  window.initializeSourceEmbed("arithmetic_quiz_final.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>
@@ -178,21 +178,53 @@ $(document).ready(function () {
 <p>Typing ‘help(quizify)’ in the R-console will provide more information.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuYGBgclxudG90ID0gMFxuYGBgXG5gYGBcbmBgYCJ9 -->
-<p><code>r</code>r</p>
-<pre class="r"><code>tot = 0</code></pre>
-<pre><code></code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsZWF2ZSB0aGlzIGNodW5rIGFzLWlzXG50b3QgPSAwXG5hbnN3ZXIua2V5ID0gXCJlSnl0ajd0dXd6QU1SZmQ4eFlVWFcwMGh3Tm96dUZPbkRrWi9RRkhZbUlBanhYb2d5ZCtIZGd3UFhicDBFY0RMUS9KSVQ3NWNqaFJiM2VJQWVYZWFmY3F4dU16QnAxZGM5WFFkclNQa2dmRFY0Y1o1d0NPVUNPdlRqU0lhMG1mOWpycXJ3UjVUQ1ptU3FuYmFoUmpKWmYzQzFtV2ROQWIyZVMyLzR3TzEyWnNhUHpGYzBNUEozVENTVUhTWHM5N09KaXY4YWVNSk9XRHBzQmRtOHplTHYvbnRiLzdUZjFuMnNmbWJ6YituUnBTYUsrTU5MU3YxMTJlV3lXMkNGV2dxZGt5Q0o0a1U5cGp6eEg2dWRQVUVjZ21BMXc9PVwiXG5zb3VyY2UuY29kZWQudHh0KGFuc3dlci5rZXkpXG5gYGAifQ== -->
+<pre class="r"><code># leave this chunk as-is
+tot = 0
+answer.key = &quot;eJytj7tuwzAMRfd8xYUXW00hwNozuFOnDkZ/QFHYmIAjxXogyd+HdgwPXbp0EcDLQ/JIT75cjhRb3eIAeXeafcqxuMzBp1dc9XQdrSPkgfDV4cZ5wCOUCOvTjSIa0mf9jrqrwR5TCZmSqnbahRjJZf3C1mWdNAb2eS2/4wO12ZsaPzFc0MPJ3TCSUHSXs97OJiv8aeMJOWDpsBdm8zeLv/ntb/7Tf1n2sfmbzb+nRpSaK+MNLSv112eWyW2CFWgqdkyCJ4kU9pjzxH6udPUEcgmA1w==&quot;
+source.coded.txt(answer.key)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Q1.1 What is 2 + 2?</p>
 <p>A. 4 B. 3</p>
-<p>{{ qnumber = 1.1 instructions = “Replace the NA with your answer (e.g., ‘A’ in quotes)” correct.answer = “A” hint = “Try ‘2+2’ from R console” explanation = “Hard to explain” }}</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgIFwiUmVwbGFjZSB0aGUgTkEgd2l0aCB5b3VyIGFuc3dlciAoZS5nLiwgJ0EnIGluIHF1b3RlcylcIlxuYW5zd2VyMS4xID0gXCJCXCJcbnF1aXouY2hlY2soYW5zd2VyMS4xKVxuYGBgIn0= -->
+<pre class="r"><code>##  &quot;Replace the NA with your answer (e.g., 'A' in quotes)&quot;
+answer1.1 = &quot;B&quot;
+quiz.check(answer1.1)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWW91ciAgYW5zd2VyMS4xIDogQlxuIn0= -->
+<pre><code>Your  answer1.1 : B</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU29ycnksIGluY29ycmVjdC4gVHJ5IGFnYWluLlxuSGludDogVHJ5ICcyKzInIGZyb20gUiBjb25zb2xlXG4ifQ== -->
+<pre><code>Sorry, incorrect. Try again.
+Hint: Try '2+2' from R console</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <p>Q1.2 What is <span class="math inline">\(e^{\pi i}\)</span></p>
-<p>A. 0 B. -1 C. Hard to say. D. I don’t know {{ qnumber = 1.2 instructions = “Replace the NA with your answer (e.g., ‘A’ in quotes)” correct.answer = “B” hint = “Try ‘Re(exp(pi * 1i))’ from R console” explanation = “exp(pi * i) equals cos(pi) + i * sin(pi).” }}</p>
+<p>A. 0 B. -1 C. Hard to say. D. I don’t know</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyMgIFwiUmVwbGFjZSB0aGUgTkEgd2l0aCB5b3VyIGFuc3dlciAoZS5nLiwgJ0EnIGluIHF1b3RlcylcIlxuYW5zd2VyMS4yID0gXCJBXCJcbnF1aXouY2hlY2soYW5zd2VyMS4yKVxuYGBgIn0= -->
+<pre class="r"><code>##  &quot;Replace the NA with your answer (e.g., 'A' in quotes)&quot;
+answer1.2 = &quot;A&quot;
+quiz.check(answer1.2)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWW91ciAgYW5zd2VyMS4yIDogQVxuIn0= -->
+<pre><code>Your  answer1.2 : A</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiU29ycnksIGluY29ycmVjdC4gVHJ5IGFnYWluLlxuSGludDogVHJ5ICdSZShleHAocGkgKiAxaSkpJyBmcm9tIFIgY29uc29sZVxuIn0= -->
+<pre><code>Sorry, incorrect. Try again.
+Hint: Try 'Re(exp(pi * 1i))' from R console</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQXJpdGhtZXRpYyBRdWl6IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiAKCkluIHRoaXMgbm90ZWJvb2ssIHdoaWNoIGlzIGluY2x1ZGVkIGluIHRoZSAicXVpemlmeSIgcGFja2FnZSwgd2UgaGF2ZSBzb21lIGV4YW1wbGVzIG9mIHF1aXogcXVlc3Rpb25zIHRoYXQgY2FuIGJlICJjb21waWxlZCIgdXNpbmcgJ3F1aXppZnkoKScuCgpUaGUgZm9ybWF0IGZvciB0aGUgcXVlc3Rpb25zIGlzIGZyZWUtZm9ybS4gQnV0IHRoZSBhbnN3ZXJzIG11c3QgYmUgd3JpdHRlbiBiZXR3ZWVuIHRoZSBkb3VibGUtYnJhY2VzIGluIHRoZSBmb3JtYXQgc2hvd24gYmVsb3cuCgpUeXBpbmcgJ2hlbHAocXVpemlmeSknIGluIHRoZSBSLWNvbnNvbGUgd2lsbCBwcm92aWRlIG1vcmUgaW5mb3JtYXRpb24uCgoKYGBge3J9CiMgbGVhdmUgdGhpcyBjaHVuayBhcy1pcwp0b3QgPSAwCmBgYAoKUTEuMSBXaGF0IGlzIDIgKyAyPwoKQS4gNApCLiAzCgp7ewpxbnVtYmVyID0gMS4xCmluc3RydWN0aW9ucyA9ICJSZXBsYWNlIHRoZSBOQSB3aXRoIHlvdXIgYW5zd2VyIChlLmcuLCAnQScgaW4gcXVvdGVzKSIKY29ycmVjdC5hbnN3ZXIgPSAiQSIKaGludCA9ICJUcnkgJzIrMicgZnJvbSBSIGNvbnNvbGUiCmV4cGxhbmF0aW9uID0gIkhhcmQgdG8gZXhwbGFpbiIKfX0KCgpRMS4yIFdoYXQgaXMgJGVee1xwaSBpfSQKCkEuIDAKQi4gLTEKQy4gSGFyZCB0byBzYXkuCkQuIEkgZG9uJ3Qga25vdwp7ewpxbnVtYmVyID0gMS4yCmluc3RydWN0aW9ucyA9ICJSZXBsYWNlIHRoZSBOQSB3aXRoIHlvdXIgYW5zd2VyIChlLmcuLCAnQScgaW4gcXVvdGVzKSIKY29ycmVjdC5hbnN3ZXIgPSAiQiIKaGludCA9ICJUcnkgJ1JlKGV4cChwaSAqIDFpKSknIGZyb20gUiBjb25zb2xlIgpleHBsYW5hdGlvbiA9ICJleHAocGkgKiBpKSBlcXVhbHMgY29zKHBpKSArIGkgKiBzaW4ocGkpLiIKfX0KCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQXJpdGhtZXRpYyBRdWl6IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiAKCkluIHRoaXMgbm90ZWJvb2ssIHdoaWNoIGlzIGluY2x1ZGVkIGluIHRoZSAicXVpemlmeSIgcGFja2FnZSwgd2UgaGF2ZSBzb21lIGV4YW1wbGVzIG9mIHF1aXogcXVlc3Rpb25zIHRoYXQgY2FuIGJlICJjb21waWxlZCIgdXNpbmcgJ3F1aXppZnkoKScuCgpUaGUgZm9ybWF0IGZvciB0aGUgcXVlc3Rpb25zIGlzIGZyZWUtZm9ybS4gQnV0IHRoZSBhbnN3ZXJzIG11c3QgYmUgd3JpdHRlbiBiZXR3ZWVuIHRoZSBkb3VibGUtYnJhY2VzIGluIHRoZSBmb3JtYXQgc2hvd24gYmVsb3cuCgpUeXBpbmcgJ2hlbHAocXVpemlmeSknIGluIHRoZSBSLWNvbnNvbGUgd2lsbCBwcm92aWRlIG1vcmUgaW5mb3JtYXRpb24uCgoKYGBge3J9CiMgbGVhdmUgdGhpcyBjaHVuayBhcy1pcwp0b3QgPSAwCmFuc3dlci5rZXkgPSAiZUp5dGo3dHV3ekFNUmZkOHhZVVhXMDBod05venVGT25Ea1ovUUZIWW1JQWp4WG9neWQrSGRnd1BYYnAwRWNETFEvSklUNzVjamhSYjNlSUFlWGVhZmNxeHVNekJwMWRjOVhRZHJTUGtnZkRWNGNaNXdDT1VDT3ZUalNJYTBtZjlqcnFyd1I1VENabVNxbmJhaFJqSlpmM0MxbVdkTkFiMmVTMi80d08xMlpzYVB6RmMwTVBKM1RDU1VIU1hzOTdPSml2OGFlTUpPV0Rwc0JkbTh6ZUx2L250Yi83VGYxbjJzZm1iemIrblJwU2FLK01OTFN2MTEyZVd5VzJDRldncWRreUNKNGtVOXBqenhINnVkUFVFY2dtQTF3PT0iCnNvdXJjZS5jb2RlZC50eHQoYW5zd2VyLmtleSkKYGBgCgpRMS4xIFdoYXQgaXMgMiArIDI/CgpBLiA0CkIuIDMKCmBgYHtyfQojIyAgIlJlcGxhY2UgdGhlIE5BIHdpdGggeW91ciBhbnN3ZXIgKGUuZy4sICdBJyBpbiBxdW90ZXMpIgphbnN3ZXIxLjEgPSAiQiIKcXVpei5jaGVjayhhbnN3ZXIxLjEpCmBgYAoKClExLjIgV2hhdCBpcyAkZV57XHBpIGl9JAoKQS4gMApCLiAtMQpDLiBIYXJkIHRvIHNheS4KRC4gSSBkb24ndCBrbm93CmBgYHtyfQojIyAgIlJlcGxhY2UgdGhlIE5BIHdpdGggeW91ciBhbnN3ZXIgKGUuZy4sICdBJyBpbiBxdW90ZXMpIgphbnN3ZXIxLjIgPSAiQSIKcXVpei5jaGVjayhhbnN3ZXIxLjIpCmBgYAoKCg==</div>
 
 
 

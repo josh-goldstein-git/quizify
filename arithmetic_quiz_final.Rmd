@@ -1,0 +1,46 @@
+---
+title: "Arithmetic Quiz"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+In this notebook, which is included in the "quizify" package, we have some examples of quiz questions that can be "compiled" using 'quizify()'.
+
+The format for the questions is free-form. But the answers must be written between the double-braces in the format shown below.
+
+Typing 'help(quizify)' in the R-console will provide more information.
+
+
+```{r}
+# leave this chunk as-is
+tot = 0
+answer.key = "eJytj7tuwzAMRfd8xYUXW00hwNozuFOnDkZ/QFHYmIAjxXogyd+HdgwPXbp0EcDLQ/JIT75cjhRb3eIAeXeafcqxuMzBp1dc9XQdrSPkgfDV4cZ5wCOUCOvTjSIa0mf9jrqrwR5TCZmSqnbahRjJZf3C1mWdNAb2eS2/4wO12ZsaPzFc0MPJ3TCSUHSXs97OJiv8aeMJOWDpsBdm8zeLv/ntb/7Tf1n2sfmbzb+nRpSaK+MNLSv112eWyW2CFWgqdkyCJ4kU9pjzxH6udPUEcgmA1w=="
+source.coded.txt(answer.key)
+```
+
+Q1.1 What is 2 + 2?
+
+A. 4
+B. 3
+
+```{r}
+##  "Replace the NA with your answer (e.g., 'A' in quotes)"
+answer1.1 = NA
+quiz.check(answer1.1)
+```
+
+
+Q1.2 What is $e^{\pi i}$
+
+A. 0
+B. -1
+C. Hard to say.
+D. I don't know
+```{r}
+##  "Replace the NA with your answer (e.g., 'A' in quotes)"
+answer1.2 = NA
+quiz.check(answer1.2)
+```
+
+
