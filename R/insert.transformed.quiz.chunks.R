@@ -12,13 +12,10 @@ insert.transformed.quiz.chunks <- function(initial.filename,
   x.out[unlist(chunk.element.list)] <- NA
   tag.start.index.vec <- unlist(lapply(chunk.element.list, min))
   transformed.out.list <- transformed.chunk.list
-  print(transformed.out.list)
   for (i in 1:length(transformed.out.list))
   {
     new.chunk <- transformed.out.list[[i]]
-    print(new.chunk)
     k <- tag.start.index.vec[i]
-    print(k)
     n <- length(new.chunk) - 1
     ## check if new chunk smaller than old chunk
     n.old <- length(chunk.element.list[[i]])
