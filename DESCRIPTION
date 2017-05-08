@@ -1,0 +1,18 @@
+Package: quizify
+Type: Package
+Title: Interactive Quizes for Rmarkdown in RStudio
+Version: 0.1.0
+Author: Joshua R. Goldstein
+Maintainer: Joshua R. Goldstein <josh.goldstein@berkeley.edu>
+Description: Processes an Rmarkdown notebook with quiz questions and answers 
+    into an interactive document with feedback from answers that can be used 
+    in Rstudio. Requires a specific syntax for the quiz answers. Produces an
+    Rmarkdown document that is interactive.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: base64enc
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
