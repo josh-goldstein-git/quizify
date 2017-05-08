@@ -8,6 +8,9 @@ Description: Processes an Rmarkdown notebook with quiz questions and answers
     into an interactive document with feedback from answers that can be used 
     in Rstudio. Requires a specific syntax for the quiz answers. Produces an
     Rmarkdown document that is interactive.
+   
+URL: http://github.com/josh-goldstein-git/quizify
+BugReports: http://github.com/josh-goldstein-git/quizify/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
