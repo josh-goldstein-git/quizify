@@ -146,8 +146,9 @@ dequizify <- function(final_file_name)
     return(reverted.chunk.list)
 }
 
-
+if (0) {
+    ## usage example: not run
 dequizify("../arithmetic_quiz_final.Rmd")
 library(quizify)
 quizify("reconstructed_arithmetic_quiz.Rmd", "carl_final.Rmd", answer.key.filename = "foo")
-
+}
